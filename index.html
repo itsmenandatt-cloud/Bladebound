@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bladebound - Sword Combat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bladebound</h1>
+    <p>Sword Combat Arena</p>
+
+    
+    <div class="arena">
+        <div class="fighter">
+            <h2>Hero</h2>
+            <div class="health-bar">
+                <div class="health hero-health"></div>
+            </div>
+            <p id="playerHPText">HP: 100 / 100</p>
+            <div class="character hero-character">⚔️</div>
+            <button id="attackButton" onclick="attack()">Attack</button>
+            <button id="skillButton" onclick="useSkill()">Special Skill</button>
+        </div>
+
+        <div class="fighter">
+            <h2>Enemy</h2>
+            <div class="health-bar">
+                <div class="health enemy-health"></div>
+            </div>
+            <p id="enemyHPText">HP: 100 / 100</p>
+            <div class="character enemy-character">👹</div>
+        </div>
+    </div>
+
+        <p id="battleMessage"></p>
+    <button onclick="restartGame()">Restart Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
